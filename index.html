@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Jumanji | Calculator app</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
+<body class="theme_1">
+  <main>
+    <section id="contents">
+
+      <div class="title">
+        <div class="logo">
+          <h1>calc</h1>
+        </div>
+        <div class="theme_btn">
+          <h2>THEME</h2>
+          <nav>
+            <ul id="menu_btn">
+              <li onclick="theme_1();" id="1">1</li>
+              <li onclick="theme_2();" id="2">2</li>
+              <li onclick="theme_3();" id="3">3</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="input_area">
+        <input type="text" id="input" readonly="readonly" placeholder="0">
+      </div>
+
+      <div class="buttons_area">
+    
+        <button onclick="insert('7');" class="key">7</button>
+        <button onclick="insert('8');" class="key">8</button>
+        <button onclick="insert('9');" class="key">9</button>
+        <button onclick="Clear();"  class="key del">DEL</button>
+
+        <button onclick="insert('4');" class="key">4</button>
+        <button onclick="insert('5');" class="key">5</button>
+        <button onclick="insert('6');" class="key">6</button>
+        <button onclick="insert('+');" class="key">+</button>
+
+        <button onclick="insert('1');" class="key">1</button>
+        <button onclick="insert('2');" class="key">2</button>
+        <button onclick="insert('3');" class="key">3</button>
+        <button onclick="insert('-');" class="key">-</button>
+
+        <button onclick="insert('.');" class="key">.</button>
+        <button onclick="insert('0');" class="key">0</button>
+        <button onclick="insert('/');" class="key">/</button>
+        <button onclick="insert('*');" class="key">x</button>
+
+        <button onclick="reset();" class="key reset del">RESET</button>
+        <button onclick="calc();" class="key equal">=</button>
+
+
+      </div>
+    </section>
+    
+    <footer>
+      <div class="attribution">
+        Coded by <a href="https://jumanjigobez.github.io/personal_portfolio" target="_blank">Jumanji</a>
+      </div>
+    </footer>
+  </main>
+  <script src="script/script.js"></script>
+</body>
+</html>
