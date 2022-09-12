@@ -242,7 +242,7 @@ footer{
 	text-decoration: none;
 }
 
-@media (max-width: 375px){
+@media (max-width: 600px){
 	body{
 		display: block;
 		padding: 2rem 1rem;
